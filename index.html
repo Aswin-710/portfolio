@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aswin Sekar — Angular Developer & Frontend Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Syne:wght@400;600;700;800&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">AS.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hire Me ↗</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="orb1 hero-bg-orb"></div>
+  <div class="orb2 hero-bg-orb"></div>
+  <div class="orb3 hero-bg-orb"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span> Open to Opportunities</div>
+    <h1 class="hero-greeting">
+      <span class="line-1">Hello, I'm</span>
+      <span class="name-highlight">Aswin Sekar</span>
+    </h1>
+    <div class="hero-typewriter">
+      <span id="typewriter-text"></span><span class="typewriter-cursor"></span>
+    </div>
+    <p class="hero-desc">
+      <strong>Angular Developer at TCS</strong>, building scalable web apps serving
+      <strong>10M+ users</strong>. 1+ year of delivering clean, performant, and accessible
+      frontend experiences with precision and craft.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary"><span>Let's Connect →</span></a>
+      <a href="#works" class="btn-outline">View My Work</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/aswin-sekar-73b0aa221/" target="_blank" class="social-icon" title="LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://github.com/aswin-710" target="_blank" class="social-icon" title="GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="/cdn-cgi/l/email-protection#8eeffdf9e7e0fdebe5effcbeb9bfbecee9e3efe7e2a0ede1e3" class="social-icon" title="Email">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+      <a href="tel:+918300640201" class="social-icon" title="Phone">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.62 4.38 2 2 0 0 1 3.59 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO VISUAL — animated code card -->
+  <div class="hero-visual">
+    <div class="hv-container">
+
+      <!-- Rotating border glow -->
+      <div class="hv-ring"></div>
+      <div class="hv-ring hv-ring2"></div>
+
+      <!-- Main card -->
+      <div class="hv-card">
+
+        <!-- Window chrome -->
+        <div class="hv-chrome">
+          <span class="hv-dot" style="background:#ff5f57"></span>
+          <span class="hv-dot" style="background:#febc2e"></span>
+          <span class="hv-dot" style="background:#28c840"></span>
+          <span class="hv-file">aswin.component.ts</span>
+        </div>
+
+        <!-- Code lines -->
+        <div class="hv-code">
+          <div class="hv-line"><span class="hv-kw">@Component</span><span class="hv-pu">({</span></div>
+          <div class="hv-line hv-indent"><span class="hv-prop">selector</span><span class="hv-pu">: </span><span class="hv-str">'app-aswin'</span><span class="hv-pu">,</span></div>
+          <div class="hv-line hv-indent"><span class="hv-prop">template</span><span class="hv-pu">: </span><span class="hv-str">'&lt;hero /&gt;'</span></div>
+          <div class="hv-line"><span class="hv-pu">})</span></div>
+          <div class="hv-line hv-gap"><span class="hv-kw">export class </span><span class="hv-cls">AswinSekar</span><span class="hv-pu"> {</span></div>
+          <div class="hv-line hv-indent"><span class="hv-prop">role</span><span class="hv-pu"> = </span><span class="hv-str">'Angular Developer'</span><span class="hv-pu">;</span></div>
+          <div class="hv-line hv-indent"><span class="hv-prop">company</span><span class="hv-pu"> = </span><span class="hv-str">'TCS Mumbai'</span><span class="hv-pu">;</span></div>
+          <div class="hv-line hv-indent"><span class="hv-prop">experience</span><span class="hv-pu"> = </span><span class="hv-num">1</span><span class="hv-pu">; </span><span class="hv-cm">// years</span></div>
+          <div class="hv-line hv-indent"><span class="hv-prop">usersServed</span><span class="hv-pu"> = </span><span class="hv-str">'10M+'</span><span class="hv-pu">;</span></div>
+          <div class="hv-line hv-indent hv-gap"><span class="hv-kw">get </span><span class="hv-fn">isAvailable</span><span class="hv-pu">() {</span></div>
+          <div class="hv-line hv-indent2"><span class="hv-kw">return </span><span class="hv-bool">true</span><span class="hv-pu">; </span><span class="hv-cm">// hire me!</span></div>
+          <div class="hv-line hv-indent"><span class="hv-pu">}</span></div>
+          <div class="hv-line"><span class="hv-pu">}</span></div>
+          <!-- blinking cursor line -->
+          <div class="hv-line hv-cursor-line"><span class="hv-cursor-blink">|</span></div>
+        </div>
+
+        <!-- Tech stack pills at bottom -->
+        <div class="hv-stack">
+          <span class="hv-pill hv-p-angular">Angular</span>
+          <span class="hv-pill hv-p-ts">TypeScript</span>
+          <span class="hv-pill hv-p-rxjs">RxJS</span>
+          <span class="hv-pill hv-p-scss">SCSS</span>
+        </div>
+      </div>
+
+      <!-- Floating stat chips -->
+      <div class="stat-chips left">
+        <div class="stat-chip">
+          <div class="num">10M+</div>
+          <div class="label">Users Served</div>
+        </div>
+        <div class="stat-chip">
+          <div class="num">80%+</div>
+          <div class="label">Test Coverage</div>
+        </div>
+      </div>
+      <div class="stat-chips right">
+        <div class="stat-chip">
+          <div class="num">1+</div>
+          <div class="label">Years at TCS</div>
+        </div>
+        <div class="stat-chip">
+          <div class="num">2×</div>
+          <div class="label">Award Winner</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item"><span class="marquee-dot"></span> Angular 15+</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> TypeScript</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> RxJS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Node.js</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> SCSS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> REST APIs</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Jasmine & Karma</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Git</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Agile</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> MySQL</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> MongoDB</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Express.js</span>
+    <!-- duplicate for infinite scroll -->
+    <span class="marquee-item"><span class="marquee-dot"></span> Angular 15+</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> TypeScript</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> RxJS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Node.js</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> SCSS</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> REST APIs</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Jasmine & Karma</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Git</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Agile</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> MySQL</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> MongoDB</span>
+    <span class="marquee-item"><span class="marquee-dot"></span> Express.js</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="reveal-left">
+      <span class="section-label">About Me</span>
+      <h2 class="section-title">Building the Web,<br>Pixel by Pixel</h2>
+      <p>Angular Developer with <strong>1+ year at Tata Consultancy Services (TCS), Mumbai</strong>, building and maintaining large-scale banking web applications. I specialize in reusable UI components, clean architecture, RESTful API integration, and performance optimization — all within Agile teams.</p>
+      <p style="margin-top:1rem;">Passionate about writing code that scales, interfaces that delight, and software that matters.</p>
+      <div class="about-highlights">
+        <div class="highlight-card"><div class="key">Full Name</div><div class="val">Aswin Sekar</div></div>
+        <div class="highlight-card"><div class="key">Birthday</div><div class="val">7 October 2001</div></div>
+        <div class="highlight-card"><div class="key">Current Role</div><div class="val">Asst. System Engineer</div></div>
+        <div class="highlight-card"><div class="key">Company</div><div class="val">TCS, Mumbai</div></div>
+        <div class="highlight-card"><div class="key">Email</div><div class="val" style="font-size:0.82rem;"><a href="/cdn-cgi/l/email-protection#c8a9bbbfa1a6bbada3a9baf8fff9f888afa5a9a1a4e6aba7a5"><span class="__cf_email__" data-cfemail="f8998b8f91968b9d93998ac8cfc9c8b89f95999194d69b9795">[email&#160;protected]</span></a></div></div>
+        <div class="highlight-card"><div class="key">Location</div><div class="val">Namakkal, TN, India</div></div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <span class="section-label">Education & Background</span>
+      <h2 class="section-title" style="font-size:1.75rem; margin-bottom: 1.5rem;">Academic Journey</h2>
+      <div class="edu-awards">
+        <div class="timeline-card">
+          <div class="timeline-icon">🎓</div>
+          <h4>Kongu Engineering College, Erode</h4>
+          <div class="meta">B.Tech — Information Technology &nbsp;·&nbsp; 2019 – 2023</div>
+          <span class="badge-pill badge-blue">80% Score</span>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-icon">📚</div>
+          <h4>State Board — Higher Secondary</h4>
+          <div class="meta">Science Stream &nbsp;·&nbsp; 2017 – 2019</div>
+          <span class="badge-pill badge-green">92% Score</span>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-icon">🌐</div>
+          <h4>Languages</h4>
+          <div class="meta">Communication & Programming</div>
+          <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.4rem;">
+            <span class="badge-pill badge-blue">Tamil</span>
+            <span class="badge-pill badge-blue">English</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="exp-inner">
+    <div style="text-align:center; margin-bottom:0.5rem;"><span class="section-label">Work Experience</span></div>
+    <h2 class="section-title" style="text-align:center;">Where I've Worked</h2>
+
+    <div class="exp-card reveal">
+      <div class="exp-header">
+        <div class="exp-company">
+          <div class="exp-logo">🏢</div>
+          <div>
+            <div class="exp-company-name">Tata Consultancy Services</div>
+            <div class="exp-company-sub">Assistant System Engineer · Mumbai, India</div>
+          </div>
+        </div>
+        <div class="exp-duration">
+          <div class="date">May 2024 – Present</div>
+          <div class="status">Currently Working</div>
+        </div>
+      </div>
+
+      <div class="exp-tech">
+        <span class="tech-chip">Angular 15</span>
+        <span class="tech-chip">TypeScript</span>
+        <span class="tech-chip">RxJS</span>
+        <span class="tech-chip">SCSS</span>
+        <span class="tech-chip">Jasmine</span>
+        <span class="tech-chip">Karma</span>
+        <span class="tech-chip">REST APIs</span>
+        <span class="tech-chip">Git</span>
+        <span class="tech-chip">Agile / Scrum</span>
+      </div>
+
+      <div class="exp-achievements">
+        <div class="exp-achievement">
+          <span class="bullet"></span>
+          <p>Developed and maintained <strong>core modules</strong> for a high-profile banking web application serving <strong>over 10 million users</strong>.</p>
+        </div>
+        <div class="exp-achievement">
+          <span class="bullet"></span>
+          <p>Created <strong>modular, reusable UI components</strong> adhering to best practices and clean architecture principles.</p>
+        </div>
+        <div class="exp-achievement">
+          <span class="bullet"></span>
+          <p>Integrated <strong>RESTful APIs</strong> to enable real-time data flow between frontend and backend services.</p>
+        </div>
+        <div class="exp-achievement">
+          <span class="bullet"></span>
+          <p>Implemented <strong>unit test cases with Jasmine & Karma</strong>, achieving <strong>80%+ code coverage</strong> and improving software reliability.</p>
+        </div>
+        <div class="exp-achievement">
+          <span class="bullet"></span>
+          <p>Ensured <strong>cross-browser compatibility</strong> and responsive design across all device types and screen sizes.</p>
+        </div>
+        <div class="exp-achievement">
+          <span class="bullet"></span>
+          <p>Participated in <strong>daily stand-ups, sprint planning, and code reviews</strong> within cross-functional Agile teams.</p>
+        </div>
+        <div class="exp-achievement">
+          <span class="bullet"></span>
+          <p>Resolved front-end bugs and <strong>optimized UI performance</strong> for significantly faster load times.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Awards -->
+    <div style="margin-top:3rem; text-align:center; margin-bottom:1.5rem;">
+      <span class="section-label">Recognition</span>
+      <h3 class="section-title" style="font-size:1.8rem;">Awards & Achievements</h3>
+    </div>
+    <div class="awards-row reveal">
+      <div class="award-card">
+        <span class="award-emoji">🏆</span>
+        <div class="award-title">On The Spot Award × 2</div>
+        <div class="award-desc">Received TCS Gems "On the Spot" award twice for exceptional performance and timely delivery of key project features.</div>
+      </div>
+      <div class="award-card">
+        <span class="award-emoji">🥇</span>
+        <div class="award-title">Best Team Award</div>
+        <div class="award-desc">Recognized under the TCS Gems program for strong collaboration, cross-team coordination, and outstanding results.</div>
+      </div>
+      <div class="award-card">
+        <span class="award-emoji">📄</span>
+        <div class="award-title">Research Publication</div>
+        <div class="award-desc">Published an international research paper at 3rd ICMIB-2023 on detecting depression using Machine Learning.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div style="text-align:center; margin-bottom:0.5rem;"><span class="section-label">My Skills</span></div>
+    <h2 class="section-title" style="text-align:center;">Technical Proficiency</h2>
+    <div class="skills-layout reveal">
+      <div class="skill-categories">
+        <button class="skill-cat-btn active" data-cat="frontend">⚡ Frontend</button>
+        <button class="skill-cat-btn" data-cat="backend">🔧 Backend</button>
+        <button class="skill-cat-btn" data-cat="tools">🛠 Tools & DevOps</button>
+        <button class="skill-cat-btn" data-cat="testing">🧪 Testing</button>
+      </div>
+
+      <div class="skills-content active" id="cat-frontend">
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">⚡</span><span class="skill-lbl">Angular 15+</span></div><span class="skill-pct">95%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🔷</span><span class="skill-lbl">TypeScript</span></div><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">📜</span><span class="skill-lbl">JavaScript</span></div><span class="skill-pct">90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🏗️</span><span class="skill-lbl">HTML5</span></div><span class="skill-pct">96%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="96"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🎨</span><span class="skill-lbl">CSS3 / SCSS</span></div><span class="skill-pct">90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">♻️</span><span class="skill-lbl">RxJS</span></div><span class="skill-pct">82%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82"></div></div></div>
+      </div>
+
+      <div class="skills-content" id="cat-backend">
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🟢</span><span class="skill-lbl">Node.js</span></div><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🚂</span><span class="skill-lbl">Express.js</span></div><span class="skill-pct">75%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="75"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🗄️</span><span class="skill-lbl">MySQL</span></div><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🍃</span><span class="skill-lbl">MongoDB</span></div><span class="skill-pct">72%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="72"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🔗</span><span class="skill-lbl">RESTful APIs</span></div><span class="skill-pct">92%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92"></div></div></div>
+      </div>
+
+      <div class="skills-content" id="cat-tools">
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🐙</span><span class="skill-lbl">Git & GitHub</span></div><span class="skill-pct">90%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🔬</span><span class="skill-lbl">Postman</span></div><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">💻</span><span class="skill-lbl">VS Code</span></div><span class="skill-pct">95%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🎨</span><span class="skill-lbl">Figma</span></div><span class="skill-pct">70%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="70"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">📋</span><span class="skill-lbl">Jira</span></div><span class="skill-pct">80%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🏃</span><span class="skill-lbl">Agile / Scrum</span></div><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div></div>
+      </div>
+
+      <div class="skills-content" id="cat-testing">
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🧪</span><span class="skill-lbl">Jasmine</span></div><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">⚡</span><span class="skill-lbl">Karma</span></div><span class="skill-pct">85%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">🔍</span><span class="skill-lbl">Unit Testing</span></div><span class="skill-pct">88%</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div></div>
+        <div class="skill-item"><div class="skill-top"><div class="skill-name-row"><span class="skill-ico">📊</span><span class="skill-lbl">Code Coverage</span></div><span class="skill-pct">80%+</span></div><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise">
+  <div class="expertise-inner">
+    <div style="text-align:center; margin-bottom:0.5rem;"><span class="section-label">Expertise</span></div>
+    <h2 class="section-title" style="text-align:center;">What I Do Best</h2>
+    <div class="expertise-grid reveal">
+      <div class="expertise-card">
+        <div class="exp-num">01</div>
+        <span class="exp-icon-big">🖥️</span>
+        <h4>Angular SPA Development</h4>
+        <p>Building production-grade Single Page Applications with Angular 15+, RxJS, and TypeScript — clean, modular, and highly maintainable.</p>
+      </div>
+      <div class="expertise-card">
+        <div class="exp-num">02</div>
+        <span class="exp-icon-big">⚡</span>
+        <h4>Performance Optimization</h4>
+        <p>Optimizing bundle sizes, lazy loading, change detection strategies, and UI responsiveness for lightning-fast user experiences.</p>
+      </div>
+      <div class="expertise-card">
+        <div class="exp-num">03</div>
+        <span class="exp-icon-big">🔗</span>
+        <h4>RESTful API Integration</h4>
+        <p>Seamlessly connecting frontends to backend services, handling real-time data flows with robust error management and interceptors.</p>
+      </div>
+      <div class="expertise-card">
+        <div class="exp-num">04</div>
+        <span class="exp-icon-big">🧪</span>
+        <h4>Unit Testing & TDD</h4>
+        <p>Writing comprehensive unit tests with Jasmine & Karma, achieving 80%+ code coverage and ensuring rock-solid software reliability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="research-inner">
+    <div style="text-align:center; margin-bottom:0.5rem;"><span class="section-label">Research</span></div>
+    <h2 class="section-title" style="text-align:center;">Published Work</h2>
+
+    <div class="research-card reveal">
+      <div class="research-icon-side">🔬</div>
+      <div class="research-content">
+        <h3>"Detecting Depression Using Quality-of-Life Attributes with Machine Learning Techniques"</h3>
+        <p>Developed a machine learning-based system to detect depression by analysing quality-of-life attributes. The paper proposes a robust classification pipeline using supervised learning algorithms, contributing a novel approach to mental health detection through data-driven insights.</p>
+        <div class="research-meta">
+          <span class="badge-pill badge-orange">International Publication</span>
+          <span class="badge-pill badge-blue">3rd ICMIB-2023</span>
+          <span class="badge-pill badge-green">Machine Learning</span>
+          <span class="badge-pill badge-gold">Mental Health AI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <div class="works-inner">
+    <div style="text-align:center; margin-bottom:0.5rem;"><span class="section-label">My Work</span></div>
+    <h2 class="section-title" style="text-align:center;">Projects & Repositories</h2>
+    <p style="text-align:center; color:var(--muted); margin-top:0.5rem; font-size:0.9rem;">Live data from GitHub — automatically updated</p>
+    <div class="works-grid" id="worksGrid">
+      <div class="works-loading">
+        <div class="spin"></div>
+        <p>Fetching repositories from GitHub…</p>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a href="https://github.com/aswin-710" target="_blank" class="gh-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        View All Repositories on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div style="text-align:center; margin-bottom:0.5rem;"><span class="section-label">Get In Touch</span></div>
+    <h2 class="section-title" style="text-align:center;">Let's Work Together</h2>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <h3>Have a project in mind?</h3>
+        <p>Whether it's a new project, a collaboration, or just a friendly chat — my inbox is always open. Let's build something great together.</p>
+        <div class="contact-items">
+          <div class="ci">
+            <div class="ci-icon">📧</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val"><a href="/cdn-cgi/l/email-protection#ceafbdb9a7a0bdaba5afbcfef9fffe8ea9a3afa7a2e0ada1a3"><span class="__cf_email__" data-cfemail="11706266787f62747a70632126202151767c70787d3f727e7c">[email&#160;protected]</span></a></div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-label">Phone</div>
+              <div class="ci-val">+91 8300640201</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-val">Namakkal, Tamil Nadu, India</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">💼</div>
+            <div>
+              <div class="ci-label">LinkedIn</div>
+              <div class="ci-val"><a href="https://www.linkedin.com/in/aswin-sekar-73b0aa221/" target="_blank">linkedin.com/in/aswin-sekar</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label>Your Email</label>
+            <input type="email" placeholder="jane@example.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Project Inquiry / Collaboration">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="form-submit" type="submit">Send Message ✉️</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed & Built by <span>Aswin Sekar</span
